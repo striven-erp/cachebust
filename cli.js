@@ -12,7 +12,7 @@ if (process.argv[2] === undefined) {
 
 filePath = process.argv[2];
 
-if (filePath.indexOf('.html') > -1) {
+if (filePath.indexOf('.html') > -1 || filePath.indexOf('.ascx') > -1 || filePath.indexOf('.aspx') > -1) {
   var options = {
     basePath: 'test/fixtures/',
     type: (process.argv[3]) ? process.argv[3] : 'MD5'
